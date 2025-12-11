@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class Arxiu {
 
+  url = window.location.href;
 }
