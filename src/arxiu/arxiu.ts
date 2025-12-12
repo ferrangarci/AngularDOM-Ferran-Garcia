@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import {yellowSubmarine} from './yellowsubmarine';
 import {changesize} from './changesize';
+import {count} from 'rxjs';
+import {countwords} from './countwords';
 
 @Component({
   selector: 'app-arxiu',
@@ -15,6 +17,8 @@ export class Arxiu {
   ngOnInit() {
     yellowSubmarine('patata')
     changesize('pepsicola')
+    countwords('lorem')
   }
 
+  protected readonly countwords = countwords;
 }
