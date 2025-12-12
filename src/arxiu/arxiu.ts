@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {yellowSubmarine} from './yellowsubmarine';
+import {changesize} from './changesize';
 
 @Component({
   selector: 'app-arxiu',
@@ -13,6 +14,7 @@ export class Arxiu {
 
   ngOnInit() {
     yellowSubmarine('patata')
+    changesize('pepsicola')
   }
 
 }
