@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {yellowSubmarine} from './yellowsubmarine';
 
 @Component({
   selector: 'app-arxiu',
@@ -9,4 +10,9 @@ import { Component } from '@angular/core';
 export class Arxiu {
 
   url = window.location.href;
+
+  ngOnInit() {
+    yellowSubmarine('patata')
+  }
+
 }
