@@ -3,6 +3,7 @@ import {yellowSubmarine} from './yellowsubmarine';
 import {changesize} from './changesize';
 import {count} from 'rxjs';
 import {countwords} from './countwords';
+import {imatge} from './imatge';
 
 @Component({
   selector: 'app-arxiu',
@@ -18,6 +19,7 @@ export class Arxiu {
     yellowSubmarine('patata')
     changesize('pepsicola')
     countwords('lorem')
+    imatge('imatge')
   }
 
   protected readonly countwords = countwords;
