@@ -4,6 +4,7 @@ import {changesize} from './changesize';
 import {count} from 'rxjs';
 import {countwords} from './countwords';
 import {imatge} from './imatge';
+import {Lecturadetext, mostrartext} from './Lecturadetext';
 
 @Component({
   selector: 'app-arxiu',
@@ -11,6 +12,7 @@ import {imatge} from './imatge';
   templateUrl: './arxiu.html',
   styleUrl: './arxiu.css',
 })
+
 export class Arxiu {
 
   url = window.location.href;
@@ -20,7 +22,10 @@ export class Arxiu {
     changesize('pepsicola')
     countwords('lorem')
     imatge('imatge')
+    Lecturadetext('textOrigen');
+    mostrartext('textDesti')
   }
+
 
   protected readonly countwords = countwords;
 }
