@@ -5,6 +5,8 @@ import {count} from 'rxjs';
 import {countwords} from './countwords';
 import {imatge} from './imatge';
 import {Lecturadetext, mostrartext} from './Lecturadetext';
+import {crearLlibre} from './serveillibre';
+import {mostrarLlibre} from './serveillibre';
 
 @Component({
   selector: 'app-arxiu',
@@ -24,6 +26,8 @@ export class Arxiu {
     imatge('imatge')
     Lecturadetext('textOrigen');
     mostrartext('textDesti')
+    crearLlibre();
+    mostrarLlibre('infoLlibre');
   }
 
 
